@@ -6,12 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=480, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
 
-	<title>Pi-Booth</title>
+	<title>Gameshow Timer</title>
 	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
 	<link rel="stylesheet" href="/css/screen.css">
-	<link rel="canonical" href="http://yourdomain.com/projects/2014-07-16-pi-booth.html">
+	<link rel="canonical" href="http://yourdomain.com/projects/2015-02-27-gameshow-timer.html">
 	<link rel="alternate" type="application/rss+xml" title="Roowilliams" href="http://yourdomain.com/feed.xml" />
 	<!-- JS Libraries -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -72,14 +72,14 @@
     <div class="page-content">
         <header class="post-header">
 
-	<h1 class="post-title">Pi-Booth</h1>
+	<h1 class="post-title">Gameshow Timer</h1>
 	
-	<p class="tagline">A Raspberry Pi powered photobooth controlled via your smartphone.</p>
+	<p class="tagline">The all-singing, all dancing host of TMW's 'Creative Showtime'</p>
 	
 
 	
 	<figure>
-		<img src="/assets/images/projects/Pi-Booth/Pi-Booth-Raspberry-Pi-Photo-Booth.jpg">
+		<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Build_Chaos.jpg">
 	</figure>
 	
 
@@ -88,12 +88,14 @@
 <aside class="post-meta">
 	<ul>
 		<li>Date:
-			<span>2014-07-16</span></li>
+			<span>2015-02-27</span></li>
 
 			<li>Project Type
 				<ul>
 					
 					<li><span>Product Design</span></li>
+					
+					<li><span>Something Else</span></li>
 					
 				</ul>
 			</li>
@@ -106,13 +108,7 @@
 					
 					<li><span>Build</span></li>
 					
-					<li><span>Raspberry Pi</span></li>
-					
-					<li><span>Python</span></li>
-					
-					<li><span>Websockets</span></li>
-					
-					<li><span>jQuery</span></li>
+					<li><span>Arduino</span></li>
 					
 				</ul>
 			</li>
@@ -124,27 +120,44 @@
 
 		<article>
 			<div class="post-content">
-				<video width="100%" preload="auto" loop="loop" autoplay="" muted=""> 
+				<!-- <video width="100%" preload="auto" loop="loop" autoplay muted> 
   <source src="/assets/videos/Pi-Booth-Usage.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video>
+</video> -->
 
-<p>The whole thing runs on a Raspberry Pi. A Python-based webserver called Flask combined with Flask-Socketio is used to provide a web interface and controller. Using the GPIO pins to control a relay I was able to create a timed flash. The unit was designed and built to be fabricated using digital manufacturing technology - laser cut and 3D printed.</p>
+<p>Every other Friday the Creative department of TMW get together to shout about any fun projects they’ve been working on. This takes the shape of a gameshow, with each of the ‘contestants’ given 30 seconds to pitch their project. Judges award the best projects with cupcakes and alcohol.</p>
 
-<p><img src="/assets/images/projects/Pi-Booth/Pi-Booth-Smart-Phone-Interface.jpg" /></p>
+<p>After a few shonky shows run with soundboards and stopwatches I was briefed to build a timer that would run the show automatically. The timer was to count down 30 seconds, buzz and then give a 5 second pause to change contestants before counting down again. There could be a variable number of contestants each week so the timer would need a way for the user to select how many ‘rounds’ there needed to be.</p>
 
-<p><img src="/assets/images/projects/Pi-Booth/Pi-Booth-Flash.jpg" /></p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Brief.jpg" /></p>
 
-<p>By removing the stock lens from the Raspberry Pi’s camera module then designing and 3D printing an adaptor I created a way to exchange lenses giving the booth a greater field of view.</p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Shift_Register_Test_Arduino.jpg" /></p>
 
-<p><img src="/assets/images/projects/Pi-Booth/Pi-Booth-Raspberry-Pi-Photo-Booth-Camera.jpg" title="TMW Wired: a huge, connected steady hand game" alt="TMW Wired: a huge, connected steady hand game" /></p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Shift_Register-Proto_Board_Soldering-Arduino.jpg" /></p>
 
-<p><img class="imgleft" src="/assets/images/projects/Pi-Booth/Pi-Booth-Process.jpg" title="Sentimeter: A novel data collection tool to measure the mood of the workplace." alt="Sentimeter: A novel data collection tool to measure the mood of the workplace." /></p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_LED_Bulb.jpg" /></p>
 
-<p><img class="imgright" src="/assets/images/projects/Pi-Booth/Pi-Booth-Process-Internals.jpg" title="Sentimeter: A novel data collection tool to measure the mood of the workplace." alt="Sentimeter: A novel data collection tool to measure the mood of the workplace." /></p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-CAD_Exploded_View.jpg" /></p>
 
-<p>It was an opportunity to test a novel way to interface with physical products. The booth is controlled entirely through a smartphone, via a website. There is something quite magical about pressing a digital button and having a physical thing happen. This also created an inspiration/talking point for our clients, eg. could people interact with an installation in a shop window via their phones?</p>
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker.jpg" /></p>
 
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_End_Cap.gif" /></p>
+
+<figure class="giffy">
+	<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker_Assembly.gif" />
+	<figcaption>The Satisfaction of assembly with a freshly 3D Printed part.</figcaption>
+</figure>
+
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-LED_Bezel_Design_Iterations.jpg" /></p>
+
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_LED_Bezel_Clip.gif" /></p>
+
+<p><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_LED_Bezel_Assembly.gif" /></p>
+
+<figure class="giffy">
+	<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Testing.gif" />
+	<figcaption>Initial testing.</figcaption>
+</figure>
 
 			</div>
 

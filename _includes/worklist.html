@@ -1,11 +1,26 @@
 <section class="work">
 
-		<ul>
-			{% for project in site.projects %}
+	<ul>
+		{% for project in site.projects %}
 
-			<li> <a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ project.tile_image }}" /><figcaption class="center-middle"><span>{{ project.title }}</span></figcaption></figure></a></li>
+		<li> <a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ project.tile_image }}" /><figcaption class="center-middle"><span>{{ project.title }}</span>
 
-			{% endfor %}		
-		</ul>
+<!-- 	
+		To be added on a rainy day
+
+		{% if project.project-type %}
+			<ul class="project-type">
+				{% for type in project.project-type %}
+					<li>{{ type }}</li>
+				{% endfor %}
+			</ul>
+		{% endif %} 
+
+-->
+
+		</figcaption></figure></a></li>
+
+		{% endfor %}		
+	</ul>
 
 </section>

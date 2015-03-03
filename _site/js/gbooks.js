@@ -2,10 +2,10 @@ $(document).ready(function() {
  $.get(
   "https://www.googleapis.com/books/v1/users/111229343672475185570/bookshelves/3/volumes",
   function(data) {
-    booksDiv = $("#books");
+    booksDiv = $(".booklist");
     items = data.items;
 
-    var list = booksDiv.append('<ul class="cf"></ul>').find('ul');
+    var list = booksDiv.append('<ul></ul>').find('ul');
 
     for (i=0; i < items.length; i++) {
 
@@ -19,15 +19,15 @@ $(document).ready(function() {
       //   bookTitle + '</span><span class="book-author">by ' + 
       //   bookAuthor + '</span></li>');
 
-      list.append('<li><div class="book-thumbnail"><a href="' + bookURL + '" target="_blank"><img src="' + 
-        bookThumbnail + '" /></a></div><span class="book-title">' + 
-        bookTitle + '</span><span class="book-author">' + 
-        bookAuthor + '</span></li>');
-
+      list.append('<li><a href="' + bookURL + '" target="_blank"><span class="book-title">' + 
+        bookTitle + '</span> <span class="book-author">' + 
+        bookAuthor + '</span></a></li>');
+      // Removed image html
+      // <img src="' + bookThumbnail + '" />
 
     }    
 
-    console.log(data);
+    //console.log(data);
   }
   );
 

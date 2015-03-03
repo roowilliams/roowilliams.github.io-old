@@ -2,6 +2,9 @@ body {
 	@include container;
 }
 
+figure {
+	margin-bottom: rhythm(1);
+}
 
 .site-header {
 	min-height: 56px;
@@ -261,6 +264,18 @@ body {
 			opacity: 0;
 			@include transform(translateY(25px));
 
+			.project-type {
+				ul {
+					@include span(4 of 6);
+
+				}
+				li {
+					@include span(1);
+					@include adjust-font-size-to(10px, 0.4);
+					font-weight: 100;
+					list-style-type: none;
+				}
+			}
 			.instacaption {
 				@include adjust-font-size-to(10px, 0.4);
 				font-weight: 300;
@@ -339,7 +354,7 @@ section {
 .project {
 
 	.post {
-		@include span(8 of 12);
+		@include span(6 of 12);
 
 		img, video {
 			display: block;
@@ -351,6 +366,14 @@ section {
 		margin-top: rhythm(2.78);
 	}
 
+}
+
+.mosaic {
+		@include span(6 of 6);
+		li {
+			@include gallery(3);
+		}
+	
 }
 
 .post-content {
@@ -383,6 +406,23 @@ section {
 
 .project {
 
+	.giffy {
+		@include span(8 of 10);
+		@include push(1);
+
+		img {
+			margin: 0;
+			@include span(2 of 6);
+		}
+
+		figcaption {
+
+			@include adjust-font-size-to(28px);
+			@include span(4 of 6);
+			@include omega;
+
+		}
+	}
 }
 
 .blogpost {
@@ -452,7 +492,30 @@ aside.post-meta {
 	}
 
 }
+.books {
+	.booklist {
+		ul {
+			@include span(10 of 12);
+			@include push(1);
 
+			li {
+				@include gallery(4 of 12);
+
+				margin-bottom: rhythm(1);
+
+				.book-title {
+					display: block;
+					font-family: Raleway, sans-serif;
+					font-weight: 700;
+					@include adjust-font-size-to(22px);
+				}
+				.book-author {
+					@include adjust-font-size-to(16px);
+				}
+			}
+		}
+	}
+}
 
 /*
 * Animations
