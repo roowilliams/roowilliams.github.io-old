@@ -1,0 +1,11 @@
+<section class="work">
+
+		<ul>
+			{% for project in site.projects %}
+
+			<li> <a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ project.tile_image }}" /><figcaption class="center-middle"><span>{{ project.title }}</span></figcaption></figure></a></li>
+
+			{% endfor %}		
+		</ul>
+
+</section>

@@ -1,0 +1,141 @@
+// Typography
+//
+// Headings, body text, lists, and other misc typographic elements.
+
+// Headings
+
+$h1-fz: 78px;
+$h2-fz: 36px;
+$h3-fz: 24px;
+$h4-fz: 20px;
+$h5-fz: 16px;
+$h6-fz: 13px;
+$lead:  22px;
+
+h1 {
+  @include adjust-font-size-to($h1-fz);
+  letter-spacing: -2px;
+  margin: rhythm(0.3) 0 rhythm(0.1) 0;
+}
+
+h2 {
+  @include adjust-font-size-to($h2-fz);
+}
+
+h3 {
+  @include adjust-font-size-to($h3-fz);
+}
+
+h4 {
+  @include adjust-font-size-to($h4-fz);
+}
+
+h5 {
+  @include adjust-font-size-to($h5-fz);
+}
+
+h6 {
+  @include adjust-font-size-to($h6-fz);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  text-rendering: optimizeLegibility;
+}
+
+
+// Body text
+p {
+  color: $base-font-color;
+  margin: 0 0 rhythm(1) 0;
+}
+
+strong {
+  color: #303030;
+}
+
+// Lists
+ul, ol, dl {
+  margin-top: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+// Misc
+.center-middle {
+  display: table;
+  height: 100%;
+  width: 100%;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1rem;
+  }
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+
+  @media (min-width: 30em) {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
+}
+
+blockquote p:last-child {
+
+}
+
+
+// Custom type
+//
+// Extend paragraphs with `.lead` for larger introductory text.
+
+.lead {
+  @include adjust-font-size-to($lead);
+  text-align: left;
+  color: $lead-text-color;
+}
+
+.sub-head {
+  @include adjust-font-size-to($lead);
+  text-align: center;
+  color: $lead-text-color;
+}
+
+.tagline {
+  @include adjust-font-size-to($lead);
+  text-align: center;
+  color: $lead-text-color;
+}
+
+

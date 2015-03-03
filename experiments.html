@@ -1,0 +1,17 @@
+---
+layout: page
+title: Experiments
+bodyclass: experiments
+permalink: /experiments/
+weight: 3
+---
+
+<p class="tagline">Little bits of this and that.</p>
+
+	<ul class="work-list">
+		{% for experiment in site.experiments %}
+
+		<li><a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ experiment.tile_image }}"><figcaption class="center-middle"><span>{{ experiment.title }}</span></figcaption></figure></a></li>
+
+		{% endfor %}		
+	</ul>

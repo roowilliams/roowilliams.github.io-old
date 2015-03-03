@@ -1,0 +1,25 @@
+<section class="bloglist">
+
+	<ul class="post-list">
+		<!-- Add conditional limit variable here, if page = index then limit to 6, if blog then unlimited -->
+		{% for post in site.posts %}
+		<li>
+			
+			<a href="{{ post.url | prepend: site.baseurl }}">
+				<!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
+				<div class="post-content">
+					<h2>
+						{{ post.title }}
+					</h2>
+					<p class="lead">
+						Donec sed congue sapien. Mauris ut pulvinar nisl. Donec accumsan, felis sed ullamcorper ullamcorper, nisl risus consectetur dui, vitae rhoncus magna est sed dolor.
+					</p>
+				</div>
+			</a>
+
+		</li>
+		{% endfor %}
+	</ul>
+
+	<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+</section>
