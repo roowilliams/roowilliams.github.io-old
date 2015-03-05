@@ -6,7 +6,7 @@ permalink: /about/
 weight: 4
 ---
 
-<h1 class="section-title">Andrew ‘Roo’ Williams</h1>
+<h1 class="section-title">Roo Williams</h1>
 
 
 <p class="tagline">I love to solve problems.</p>
