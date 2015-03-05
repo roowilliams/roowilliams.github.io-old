@@ -4,7 +4,7 @@ bodyclass: project
 title:  "Sentimeter"
 tagline: "A novel data collection tool to measure the mood of the workplace."
 date:   2014-08-20
-order: 2
+order: 4
 image: "/assets/images/projects/Sentimeter/Sentimeter.jpg"
 tile_image: "/assets/images/projects/Sentimeter/tile.jpg"
 

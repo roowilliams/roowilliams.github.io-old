@@ -4,7 +4,7 @@ bodyclass: project
 title:  "Gameshow Timer"
 date:   	2014-07-16 23:21:51
 tagline: "The all-singing, all dancing host of TMW's 'Creative Showtime'"
-order: 1
+order: 2
 image: "/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Build_Chaos.jpg"
 tile_image: "/assets/images/projects/Gameshow-Timer/tile.jpg"
 

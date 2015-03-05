@@ -5,7 +5,7 @@ title:  "Activision Painyatta"
 tagline: "A tweet-powered baseball bat to bring a digital presence to the launch event of Activision's Skylanders Trapteam"
 date:   2014-10-05
 categories: portfolio
-order: 2
+order: 3
 image: "/assets/images/projects/Painyatta/Activision-Skylanders_Launch-Painyatta-Digital-Event-Full.jpg"
 tile_image: "/assets/images/projects/Painyatta/tile.jpg"
 

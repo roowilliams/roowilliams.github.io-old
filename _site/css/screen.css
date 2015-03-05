@@ -655,11 +655,13 @@ figure {
   height: 100%;
   background: #040810;
   overflow: hidden;
+  margin: 0;
 }
-/* line 246, ../../_compass/partials/_layout.scss */
+/* line 247, ../../_compass/partials/_layout.scss */
 .work ul figure img, .instagram ul figure img {
   width: 100%;
   height: 100%;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -669,7 +671,7 @@ figure {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 256, ../../_compass/partials/_layout.scss */
+/* line 258, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption, .instagram ul figure figcaption {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -687,13 +689,13 @@ figure {
   -webkit-transform: translateY(25px);
   transform: translateY(25px);
 }
-/* line 268, ../../_compass/partials/_layout.scss */
+/* line 270, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .project-type ul, .instagram ul figure figcaption .project-type ul {
   width: 65.51724%;
   float: left;
   margin-right: 3.44828%;
 }
-/* line 272, ../../_compass/partials/_layout.scss */
+/* line 274, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .project-type li, .instagram ul figure figcaption .project-type li {
   width: 6.77966%;
   float: left;
@@ -703,20 +705,20 @@ figure {
   font-weight: 100;
   list-style-type: none;
 }
-/* line 279, ../../_compass/partials/_layout.scss */
+/* line 281, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .instacaption, .instagram ul figure figcaption .instacaption {
   font-size: 0.55556em;
   line-height: 1.52em;
   font-weight: 300;
 }
-/* line 287, ../../_compass/partials/_layout.scss */
+/* line 289, ../../_compass/partials/_layout.scss */
 .work ul a, .instagram ul a {
   display: block;
   position: relative;
   height: 100%;
   text-decoration: none;
 }
-/* line 295, ../../_compass/partials/_layout.scss */
+/* line 297, ../../_compass/partials/_layout.scss */
 .work ul a:hover > figure figcaption, .instagram ul a:hover > figure figcaption {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -724,7 +726,7 @@ figure {
   transform: translateY(0px);
   opacity: 1;
 }
-/* line 300, ../../_compass/partials/_layout.scss */
+/* line 302, ../../_compass/partials/_layout.scss */
 .work ul a:hover > figure img, .instagram ul a:hover > figure img {
   opacity: 0.08;
   -moz-transform: scale(1.1);
@@ -736,21 +738,21 @@ figure {
 /**
 * Sections
 */
-/* line 314, ../../_compass/partials/_layout.scss */
+/* line 316, ../../_compass/partials/_layout.scss */
 section {
   overflow: hidden;
   *zoom: 1;
   display: block;
 }
 
-/* line 320, ../../_compass/partials/_layout.scss */
+/* line 322, ../../_compass/partials/_layout.scss */
 .section-title {
   text-align: center;
   padding-left: 8.47458%;
   padding-right: 8.47458%;
 }
 
-/* line 324, ../../_compass/partials/_layout.scss */
+/* line 326, ../../_compass/partials/_layout.scss */
 .sub-head {
   text-align: center;
   padding-left: 8.47458%;
@@ -760,7 +762,7 @@ section {
 /**
 * Posts
 */
-/* line 332, ../../_compass/partials/_layout.scss */
+/* line 334, ../../_compass/partials/_layout.scss */
 .post-header {
   width: 83.05085%;
   float: left;
@@ -769,47 +771,57 @@ section {
   margin-bottom: 2.11111em;
   text-align: center;
 }
-/* line 338, ../../_compass/partials/_layout.scss */
+/* line 340, ../../_compass/partials/_layout.scss */
 .post-header figure {
   text-align: center;
 }
-/* line 341, ../../_compass/partials/_layout.scss */
+/* line 343, ../../_compass/partials/_layout.scss */
 .post-header figure img {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 347, ../../_compass/partials/_layout.scss */
+  /* line 349, ../../_compass/partials/_layout.scss */
   .post-title {
     font-size: 36px;
   }
 }
 
-/* line 356, ../../_compass/partials/_layout.scss */
+/* line 355, ../../_compass/partials/_layout.scss */
+.post {
+  margin-bottom: 8.44444em;
+}
+/* line 357, ../../_compass/partials/_layout.scss */
+.post img, .post video {
+  display: block;
+  margin: 2.11111em auto;
+}
+
+/* line 366, ../../_compass/partials/_layout.scss */
 .project .post {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   margin-bottom: 8.44444em;
 }
-/* line 359, ../../_compass/partials/_layout.scss */
+/* line 369, ../../_compass/partials/_layout.scss */
 .project .post img, .project .post video {
   display: block;
   margin: 2.11111em auto;
 }
-/* line 365, ../../_compass/partials/_layout.scss */
+/* line 375, ../../_compass/partials/_layout.scss */
 .project .post-meta {
   margin-top: 5.86889em;
 }
 
-/* line 371, ../../_compass/partials/_layout.scss */
+/* line 381, ../../_compass/partials/_layout.scss */
 .mosaic {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 373, ../../_compass/partials/_layout.scss */
+/* line 383, ../../_compass/partials/_layout.scss */
 .mosaic li {
   width: 23.72881%;
   float: left;
@@ -841,47 +853,47 @@ section {
 }
 
 @media screen and (max-width: 800px) {
-  /* line 382, ../../_compass/partials/_layout.scss */
+  /* line 392, ../../_compass/partials/_layout.scss */
   .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 390, ../../_compass/partials/_layout.scss */
+/* line 400, ../../_compass/partials/_layout.scss */
 .post-content h3 {
   font-size: 26px;
 }
 @media screen and (max-width: 800px) {
-  /* line 390, ../../_compass/partials/_layout.scss */
+  /* line 400, ../../_compass/partials/_layout.scss */
   .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 398, ../../_compass/partials/_layout.scss */
+/* line 408, ../../_compass/partials/_layout.scss */
 .post-content h4 {
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 398, ../../_compass/partials/_layout.scss */
+  /* line 408, ../../_compass/partials/_layout.scss */
   .post-content h4 {
     font-size: 18px;
   }
 }
 
-/* line 409, ../../_compass/partials/_layout.scss */
+/* line 419, ../../_compass/partials/_layout.scss */
 .project .giffy {
   width: 79.59184%;
   float: left;
   margin-right: 2.04082%;
   margin-left: 8.47458%;
 }
-/* line 413, ../../_compass/partials/_layout.scss */
+/* line 423, ../../_compass/partials/_layout.scss */
 .project .giffy img {
   margin: 0;
   width: 31.03448%;
   float: left;
   margin-right: 3.44828%;
 }
-/* line 418, ../../_compass/partials/_layout.scss */
+/* line 428, ../../_compass/partials/_layout.scss */
 .project .giffy figcaption {
   font-size: 1.55556em;
   line-height: 1.35714em;
@@ -892,12 +904,12 @@ section {
   margin-right: 0;
 }
 
-/* line 429, ../../_compass/partials/_layout.scss */
+/* line 439, ../../_compass/partials/_layout.scss */
 .blogpost .post-meta {
   margin-top: 0.10556em;
 }
 
-/* line 434, ../../_compass/partials/_layout.scss */
+/* line 444, ../../_compass/partials/_layout.scss */
 aside.post-meta {
   width: 15.25424%;
   float: left;
@@ -906,39 +918,39 @@ aside.post-meta {
   background-color: #fff;
   font-family: "Raleway", sans-serif;
 }
-/* line 441, ../../_compass/partials/_layout.scss */
+/* line 451, ../../_compass/partials/_layout.scss */
 aside.post-meta span {
   font-weight: 700;
   color: #282828;
 }
-/* line 445, ../../_compass/partials/_layout.scss */
+/* line 455, ../../_compass/partials/_layout.scss */
 aside.post-meta ul {
   margin-left: 0;
 }
-/* line 448, ../../_compass/partials/_layout.scss */
+/* line 458, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li {
   list-style-type: none;
   margin-bottom: 0.42222em;
 }
-/* line 452, ../../_compass/partials/_layout.scss */
+/* line 462, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li ul li {
   line-height: 2.11111em;
   list-style-type: none;
   text-indent: -5px;
   margin: 0;
 }
-/* line 457, ../../_compass/partials/_layout.scss */
+/* line 467, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li ul li:before {
   content: "-";
   position: relative;
   left: -5px;
 }
-/* line 461, ../../_compass/partials/_layout.scss */
+/* line 471, ../../_compass/partials/_layout.scss */
 aside.post-meta ul ul {
   margin-left: 20px;
 }
 
-/* line 469, ../../_compass/partials/_layout.scss */
+/* line 479, ../../_compass/partials/_layout.scss */
 .blogpost .post {
   width: 66.10169%;
   float: left;
@@ -948,32 +960,32 @@ aside.post-meta ul ul {
 /*
 * Misc
 */
-/* line 478, ../../_compass/partials/_layout.scss */
+/* line 488, ../../_compass/partials/_layout.scss */
 .intro {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
   text-align: center;
 }
-/* line 483, ../../_compass/partials/_layout.scss */
+/* line 493, ../../_compass/partials/_layout.scss */
 .intro h1 {
   font-size: 8.88889em;
   line-height: 1.1875em;
   color: #e6e6e6;
 }
-/* line 489, ../../_compass/partials/_layout.scss */
+/* line 499, ../../_compass/partials/_layout.scss */
 .intro p {
   text-align: center;
   color: #c8c8c8;
 }
 
-/* line 497, ../../_compass/partials/_layout.scss */
+/* line 507, ../../_compass/partials/_layout.scss */
 .books .booklist ul {
   width: 83.05085%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 8.47458%;
 }
-/* line 501, ../../_compass/partials/_layout.scss */
+/* line 511, ../../_compass/partials/_layout.scss */
 .books .booklist ul li {
   width: 32.20339%;
   float: left;
@@ -998,7 +1010,7 @@ aside.post-meta ul ul {
   margin-right: -100%;
   clear: none;
 }
-/* line 506, ../../_compass/partials/_layout.scss */
+/* line 516, ../../_compass/partials/_layout.scss */
 .books .booklist ul li .book-title {
   display: block;
   font-family: Raleway, sans-serif;
@@ -1006,7 +1018,7 @@ aside.post-meta ul ul {
   font-size: 1.22222em;
   line-height: 1.72727em;
 }
-/* line 512, ../../_compass/partials/_layout.scss */
+/* line 522, ../../_compass/partials/_layout.scss */
 .books .booklist ul li .book-author {
   font-size: 0.88889em;
   line-height: 2.375em;
@@ -1055,7 +1067,7 @@ aside.post-meta ul ul {
     opacity: 1;
   }
 }
-/* line 534, ../../_compass/partials/_layout.scss */
+/* line 544, ../../_compass/partials/_layout.scss */
 .animate {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1073,14 +1085,14 @@ aside.post-meta ul ul {
   animation-iteration-count: 1;
 }
 
-/* line 546, ../../_compass/partials/_layout.scss */
+/* line 556, ../../_compass/partials/_layout.scss */
 .animate-one {
   -moz-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 549, ../../_compass/partials/_layout.scss */
+/* line 559, ../../_compass/partials/_layout.scss */
 .animate-two {
   -moz-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
@@ -1093,7 +1105,7 @@ aside.post-meta ul ul {
 /*
 * About
 */
-/* line 567, ../../_compass/partials/_layout.scss */
+/* line 577, ../../_compass/partials/_layout.scss */
 .about .portrait {
   width: 300px;
   margin: 2.11111em auto;
@@ -1101,7 +1113,7 @@ aside.post-meta ul ul {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 572, ../../_compass/partials/_layout.scss */
+/* line 582, ../../_compass/partials/_layout.scss */
 .about .post {
   padding-left: 8.47458%;
   padding-right: 8.47458%;

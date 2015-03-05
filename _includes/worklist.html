@@ -1,7 +1,9 @@
 <section class="work">
 
+{% assign projects = (site.projects | sort: 'order') %}
 	<ul>
-		{% for project in site.projects %}
+
+		{% for project in projects %}
 
 		<li> <a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ project.tile_image }}" /><figcaption class="center-middle"><span>{{ project.title }}</span>
 

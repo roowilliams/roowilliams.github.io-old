@@ -19,15 +19,14 @@ $(document).ready(function() {
       //   bookTitle + '</span><span class="book-author">by ' + 
       //   bookAuthor + '</span></li>');
 
-      list.append('<li><a href="' + bookURL + '" target="_blank"><span class="book-title">' + 
-        bookTitle + '</span> <span class="book-author">' + 
-        bookAuthor + '</span></a></li>');
-      // Removed image html
-      // <img src="' + bookThumbnail + '" />
+      list.append('<li><div class="book-thumbnail"><a href="' + bookURL + '" target="_blank"></div><span class="book-title">' + 
+      bookTitle + '</span><span class="book-author">' + 
+      bookAuthor + '</span></a></li>');
 
+      // <img src="' + bookThumbnail + '" />
     }    
 
-    //console.log(data);
+    console.log(data);
   }
   );
 
