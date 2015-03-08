@@ -107,6 +107,14 @@ figure {
 
 .bloglist {
 
+	h2 {
+		@include adjust-leading-to(0.4);
+	}
+
+	.date {
+		margin-top: - rhythm(1);
+		color: rgb(20,20,20);
+	}
 
 	ul {
 		@include container;
@@ -117,9 +125,16 @@ figure {
 			position: relative;
 
 			text-align: center;
+			@include breakpoint(max-width $delta) {
+				@include pad(1);
+			}
 
 			p { 
-				text-align: center; 
+				text-align: center;
+
+				@include breakpoint(max-width $delta) {
+					text-align: justify;
+				}
 			}
 
 			&:hover {
@@ -130,6 +145,10 @@ figure {
 				display: block;
 				height: 100%;
 				padding: 2.5%;
+
+				@include breakpoint(max-width $delta) {
+					padding: 0;
+				}
 
 				.post-content {
 
@@ -314,7 +333,6 @@ figure {
 */
 
 section {
-
 	@include clearfix;
 	display: block;
 }
@@ -326,6 +344,11 @@ section {
 .sub-head {
 	text-align: center;
 	@include pad(1);
+	max-width: 1200px;
+
+	@include breakpoint(max-width $delta) {
+		text-align: justify;
+	}
 }
 
 /**
@@ -366,22 +389,42 @@ section {
 	.post {
 		@include span(6 of 12);
 
+		@include breakpoint(max-width $delta) {
+			@include span(10 of 12);
+			@include pad(1);
+		}
+
 		img, video {
 			display: block;
 			margin: rhythm(1) auto;
 		}
+
 		margin-bottom: rhythm(4);
+
+
 	}
 	.post-meta {
 		margin-top: rhythm(2.78);
+		@include breakpoint(max-width $delta) {
+			margin-top: rhythm(1);
+		}
 	}
 
 }
 
 .mosaic {
 	@include span(6 of 6);
+
 	li {
 		@include gallery(3);
+	}
+	
+}
+.mosaic-two {
+	@include span(6 of 6);
+	
+	li {
+		@include gallery(6);
 	}
 	
 }
@@ -390,7 +433,6 @@ section {
 
 
 	h2 {
-
 
 		@include media-query($on-laptop) {
 			font-size: 28px;
@@ -445,6 +487,11 @@ aside.post-meta {
 	@include span(2);
 	@include push(1);
 	
+	@include breakpoint(max-width $delta) {
+		@include span(10 of 12);
+		@include pad(0);
+	}
+
 	background-color: #fff;
 	font-family: "Raleway", sans-serif;
 
@@ -489,9 +536,8 @@ aside.post-meta {
 	@include pad(1);
 	text-align: center;
 
-
 	h1 {
-		@include adjust-font-size-to(160px);
+		@include adjust-font-size-to(140px);
 		color: $intro-heading-color;
 
 	}
@@ -508,8 +554,19 @@ aside.post-meta {
 			@include span(10 of 12);
 			@include push(1);
 
+			@include breakpoint(max-width $delta) {
+				@include span(12 of 12);
+				@include push(0);
+			}
+
 			li {
 				@include gallery(4 of 12);
+
+				@include breakpoint(max-width $delta) {
+					@include pad(1);
+					@include gallery(12 of 12);
+					float: none;
+				}
 
 				margin-bottom: rhythm(1);
 
@@ -581,5 +638,11 @@ aside.post-meta {
 	}
 	.post {
 		@include pad(1);
+		@include breakpoint(max-width $delta) {
+			margin-bottom: rhythm(1);
+		}
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

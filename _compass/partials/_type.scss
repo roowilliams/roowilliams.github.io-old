@@ -5,7 +5,8 @@
 // Headings
 
 $h1-fz: 78px;
-$h2-fz: 36px;
+$h1-md: 60px;
+$h2-fz: 40px;
 $h3-fz: 24px;
 $h4-fz: 20px;
 $h5-fz: 16px;
@@ -15,7 +16,11 @@ $lead:  22px;
 h1 {
   @include adjust-font-size-to($h1-fz);
   letter-spacing: -2px;
-  margin: rhythm(0.3) 0 rhythm(0.1) 0;
+  margin: rhythm(0.3) 0 0 0;
+  @include breakpoint(max-width $delta) {
+   @include adjust-font-size-to($h1-md);
+   letter-spacing: -1px;
+ }
 }
 
 h2 {
@@ -136,6 +141,9 @@ blockquote p:last-child {
   @include adjust-font-size-to($lead);
   text-align: center;
   color: $lead-text-color;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-left: right;
 }
 
 

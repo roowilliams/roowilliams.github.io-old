@@ -1,4 +1,5 @@
 ---
+hidden: false
 layout: project
 bodyclass: project
 title:  "Gameshow Timer"
@@ -32,6 +33,11 @@ Every other Friday the Creative department of TMW get together to shout about an
 
 After a few shonky shows run with soundboards and stopwatches I was briefed to build a timer that would run the show automatically. The timer was to count down 30 seconds, buzz and then give a 5 second pause to change contestants before counting down again. There could be a variable number of contestants each week so the timer would need a way for the user to select how many 'rounds' there needed to be.
 
+<video width="100%" preload="auto" autoplay controls> 
+  <source src="/assets/videos/Gameshow_Timer.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Brief.jpg" />
 
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Shift_Register_Test_Arduino.jpg" />
@@ -44,25 +50,18 @@ After a few shonky shows run with soundboards and stopwatches I was briefed to b
 
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker.jpg" />
 
-<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_End_Cap.gif" />
+<ul class="mosaic-two">
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_End_Cap.gif" title="" alt=""/></li>
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker_Assembly.gif" title="" alt=""/></li>
+</ul>
 
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Build_Chaos.jpg" />
 
-
-<figure class="giffy">
-	<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker_Assembly.gif" />
-	<figcaption>The Satisfaction of assembly with a freshly 3D Printed part.</figcaption>
-</figure>
-
+<ul class="mosaic">
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_End_Cap_With_Speaker_Assembly.gif" title="" alt=""/></li>
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_LED_Bezel_Clip.gif" title="" alt=""/></li>
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_LED_Bezel_Assembly.gif" title="" alt=""/></li>
+	<li><img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Testing.gif" title="" alt=""/></li>
+</ul>
 
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-LED_Bezel_Design_Iterations.jpg" />
-
-<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printing_LED_Bezel_Clip.gif" />
-
-<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-3D_Printed_LED_Bezel_Assembly.gif" />
-
-
-<figure class="giffy">
-	<img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Testing.gif" />
-	<figcaption>Initial testing.</figcaption>
-</figure>

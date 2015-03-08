@@ -1,4 +1,5 @@
 ---
+hidden: false
 layout: project
 bodyclass: project
 title:  "Activision Painyatta"
@@ -21,8 +22,8 @@ skills-tools:
 - Stepper Motors
 ---
 
-<video width="100%" preload="auto" loop="loop" autoplay muted> 
-	<source src="/assets/videos/Sentimeter.mp4" type="video/mp4" />
+<video width="100%" preload="auto" autoplay controls> 
+	<source src="/assets/videos/Painyatta.mp4" type="video/mp4" />
 	Your browser does not support the video tag.
 </video>
 

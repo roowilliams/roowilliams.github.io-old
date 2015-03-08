@@ -5,8 +5,11 @@
 
 		{% for project in projects %}
 
+		{% if project.hidden == false %}
+
 		<li> <a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ project.tile_image }}" /><figcaption class="center-middle"><span>{{ project.title }}</span>
 
+		{% endif %}
 <!-- 	
 		To be added on a rainy day
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=480, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+
+	<title>Hovercraft Research 1: Motors</title>
+	<meta name="description" content="A good weekend to learn stuff that will help me build my robotic hovercraft. I am currently trying to work out what I need for the lift fan.  ">
+
+	<link rel="stylesheet" href="/css/screen.css">
+	<link rel="canonical" href="http://yourdomain.com/blog/2012/12/01/hovercraft-motors.html">
+	<link rel="alternate" type="application/rss+xml" title="Roowilliams" href="http://yourdomain.com/feed.xml" />
+	<!-- JS Libraries -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- JS -->
+	
+</head>
+
+
+  <body class="blogpost">
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Roowilliams</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+      
+        
+          
+        
+          
+          <a class="page-link" href="/work/">Work</a>
+          
+        
+          
+          <a class="page-link" href="/blog/">Blog</a>
+          
+        
+          
+          <a class="page-link" href="/experiments/">Experiments</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <header class="post-header">
+		<h1 class="post-title">Hovercraft Research 1: Motors</h1>
+
+		
+
+		
+		<figure>
+			<img src="/assets/images/blog/hover/hover.jpg">
+		</figure>
+		
+	</header>
+
+<aside class="post-meta">
+	<ul>
+		<li>Date:
+			<span>01/12/2012</span>
+		</li>
+	</ul>
+
+</aside>
+
+<div class="post">
+
+	<article>
+		<div class="post-content">
+			<p>A good weekend to learn stuff that will help me build my robotic hovercraft. I am currently trying to work out what I need for the lift fan.  </p>
+
+<p>I understand how brushed motors work having seen the inside of plenty during my days of ripping any electrical toy I had apart as a kid, but wanted to learn about how brushless motors work.  </p>
+
+<p>Standard DC electric motors contain two main parts: permanent magnets and electromagnets formed by a charged coil. It is the attract and repel of the electromagnets against the permanent magnets being switched at the correct point of the motors rotation that makes them spin. In brushed motors this is done mechanically. The terminals for the coils are placed around the shaft of the motor. This is the bit that spins, and it is called the armature. As the armature spins around, the brushes come into contact with each of the terminals. The positioning of these terminals allows the correct coil to charge creating a temporary electromagnet that pushes against the fixed permanent magnets, pushing the motor around.</p>
+
+<p>In short, brushed motors spin the armature around inside a case with fixed, permanent magnets mounted around the outside of the casing. The brushes are needed to come into contact with the terminals, the switching is done mechanically.</p>
+
+<p>Brushless motors do the opposite; the coils are fixed either to the outer casing or inside the casing while the magnets are spun. This means that the coils can’t be mechanically switched – there is no feedback about the motors position since there are no brushes in contact with the <strong>armature</strong>. This means that they have to be computer-controlled. The electromagnets have to charge in the correct order, and at the correct times, relative to the speed of the spinning armature. This is done by something called an <strong>electronic speed control or ESC.</strong></p>
+
+<p>I am still wondering about how it knows what pulses to send when – if there is a heavy load on the motor, then the motor is going to take longer to spin up, and so the pulses will fall out of sync without feedback. More reading to be done here.</p>
+
+<p>There are also two different kinds of brushless motors:</p>
+
+<p><strong>Outrunner</strong> motors have the magnets mounted on the outer casing and the outer casing is spun around the fixed coils in the center of the motor casing, hence the term “Outrunner”.</p>
+
+<p><strong>Inrunner</strong> motors have the fixed coils mounted to the outer casing and the magnets are mounted to the armature shaft and this spins inside the casing, hence the term “Inrunner”.</p>
+
+<p><a href="http://rcadvisor.com/inrunner-vs-outrunner-motors">This article</a> and video explains in detail (once your ears adjust to dude’s accent), <a href="http://www.rcpowers.com/community/threads/inrunner-vs-outrunner.5215/#post-39966">this forum post</a> is particularly helpful and <a href="http://reviews.ebay.com/Guide-to-Choosing-Your-First-Brushless-Motor?ugid=10000000017287417">this eBay guide</a> looks promising.</p>
+
+<p>That briefly covers types of motors but they also have different power ratings that I need to get my head around. I need something that can generate enough lift to allow me to support all the sensors/cameras I plan to mount on it. There are formulas that allow for a good calculation of how much lift you can achieve, but that in itself will be another topic. TBC.</p>
+
+
+		</div>
+
+	</article>
+
+
+</div>
+
+    </div>
+
+  <!-- footer was here -->
+
+  </body>
+
+</html>

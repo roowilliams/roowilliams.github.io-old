@@ -13,7 +13,11 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- JS -->
-	<script src="{{ "/js/gbooks.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/instafeed.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+	{% if page.bodyclass == 'about' %}
+
+		<script src="{{ "/js/gbooks.js" | prepend: site.baseurl }}"></script>
+		<script src="{{ "/js/instafeed.min.js" | prepend: site.baseurl }}"></script>
+		<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+		
+	{% endif %}
 </head>
