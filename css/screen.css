@@ -244,90 +244,98 @@ pre > code {
   fill: #828282;
 }
 
-/* line 15, ../../_compass/partials/_type.scss */
+/* line 16, ../../_compass/partials/_type.scss */
 h1 {
   font-size: 4.33333em;
   line-height: 1.46154em;
   letter-spacing: -2px;
-  margin: 0.63333em 0 0.21111em 0;
+  margin: 0.63333em 0 0 0;
+}
+@media (max-width: 657px) {
+  /* line 16, ../../_compass/partials/_type.scss */
+  h1 {
+    font-size: 3.33333em;
+    line-height: 1.26667em;
+    letter-spacing: -1px;
+  }
 }
 
-/* line 21, ../../_compass/partials/_type.scss */
+/* line 26, ../../_compass/partials/_type.scss */
 h2 {
-  font-size: 2em;
-  line-height: 2.11111em;
+  font-size: 2.22222em;
+  line-height: 1.9em;
 }
 
-/* line 25, ../../_compass/partials/_type.scss */
+/* line 30, ../../_compass/partials/_type.scss */
 h3 {
   font-size: 1.33333em;
   line-height: 1.58333em;
 }
 
-/* line 29, ../../_compass/partials/_type.scss */
+/* line 34, ../../_compass/partials/_type.scss */
 h4 {
   font-size: 1.11111em;
   line-height: 1.9em;
 }
 
-/* line 33, ../../_compass/partials/_type.scss */
+/* line 38, ../../_compass/partials/_type.scss */
 h5 {
   font-size: 0.88889em;
   line-height: 2.375em;
 }
 
-/* line 37, ../../_compass/partials/_type.scss */
+/* line 42, ../../_compass/partials/_type.scss */
 h6 {
   font-size: 0.72222em;
   line-height: 2.92308em;
 }
 
-/* line 41, ../../_compass/partials/_type.scss */
+/* line 46, ../../_compass/partials/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   text-rendering: optimizeLegibility;
 }
 
-/* line 48, ../../_compass/partials/_type.scss */
+/* line 53, ../../_compass/partials/_type.scss */
 p {
   color: #505050;
   margin: 0 0 2.11111em 0;
 }
 
-/* line 53, ../../_compass/partials/_type.scss */
+/* line 58, ../../_compass/partials/_type.scss */
 strong {
   color: #303030;
 }
 
-/* line 58, ../../_compass/partials/_type.scss */
+/* line 63, ../../_compass/partials/_type.scss */
 ul, ol, dl {
   margin-top: 0;
 }
 
-/* line 62, ../../_compass/partials/_type.scss */
+/* line 67, ../../_compass/partials/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 65, ../../_compass/partials/_type.scss */
+/* line 70, ../../_compass/partials/_type.scss */
 dd {
   margin-bottom: .5rem;
 }
 
-/* line 70, ../../_compass/partials/_type.scss */
+/* line 75, ../../_compass/partials/_type.scss */
 .center-middle {
   display: table;
   height: 100%;
   width: 100%;
 }
-/* line 75, ../../_compass/partials/_type.scss */
+/* line 80, ../../_compass/partials/_type.scss */
 .center-middle span {
   display: table-cell;
   vertical-align: middle;
   padding: 0 1rem;
 }
 
-/* line 82, ../../_compass/partials/_type.scss */
+/* line 87, ../../_compass/partials/_type.scss */
 hr {
   position: relative;
   margin: 1.5rem 0;
@@ -336,7 +344,7 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-/* line 90, ../../_compass/partials/_type.scss */
+/* line 95, ../../_compass/partials/_type.scss */
 abbr {
   font-size: 85%;
   font-weight: bold;
@@ -344,14 +352,14 @@ abbr {
   text-transform: uppercase;
 }
 
-/* line 96, ../../_compass/partials/_type.scss */
+/* line 101, ../../_compass/partials/_type.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
 }
 
 /* Quotes */
-/* line 102, ../../_compass/partials/_type.scss */
+/* line 107, ../../_compass/partials/_type.scss */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -359,14 +367,14 @@ blockquote {
   border-left: .25rem solid #e5e5e5;
 }
 @media (min-width: 30em) {
-  /* line 102, ../../_compass/partials/_type.scss */
+  /* line 107, ../../_compass/partials/_type.scss */
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
 }
 
-/* line 123, ../../_compass/partials/_type.scss */
+/* line 128, ../../_compass/partials/_type.scss */
 .lead {
   font-size: 1.22222em;
   line-height: 1.72727em;
@@ -374,7 +382,7 @@ blockquote {
   color: rgba(30, 30, 30, 0.5);
 }
 
-/* line 129, ../../_compass/partials/_type.scss */
+/* line 134, ../../_compass/partials/_type.scss */
 .sub-head {
   font-size: 1.22222em;
   line-height: 1.72727em;
@@ -382,12 +390,15 @@ blockquote {
   color: rgba(30, 30, 30, 0.5);
 }
 
-/* line 135, ../../_compass/partials/_type.scss */
+/* line 140, ../../_compass/partials/_type.scss */
 .tagline {
   font-size: 1.22222em;
   line-height: 1.72727em;
   text-align: center;
   color: rgba(30, 30, 30, 0.5);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-left: right;
 }
 
 /* line 1, ../../_compass/partials/_layout.scss */
@@ -499,7 +510,16 @@ figure {
 /**
 * Page content
 */
-/* line 111, ../../_compass/partials/_layout.scss */
+/* line 110, ../../_compass/partials/_layout.scss */
+.bloglist h2 {
+  line-height: 0.84444em;
+}
+/* line 114, ../../_compass/partials/_layout.scss */
+.bloglist .date {
+  margin-top: -2.11111em;
+  color: #141414;
+}
+/* line 119, ../../_compass/partials/_layout.scss */
 .bloglist ul {
   max-width: 100%;
   margin-left: auto;
@@ -511,7 +531,7 @@ figure {
   display: block;
   clear: both;
 }
-/* line 114, ../../_compass/partials/_layout.scss */
+/* line 122, ../../_compass/partials/_layout.scss */
 .bloglist ul li {
   margin-bottom: 4.22222em;
   padding-left: 16.94915%;
@@ -519,43 +539,62 @@ figure {
   position: relative;
   text-align: center;
 }
-/* line 121, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 122, ../../_compass/partials/_layout.scss */
+  .bloglist ul li {
+    padding-left: 8.47458%;
+    padding-right: 8.47458%;
+  }
+}
+/* line 132, ../../_compass/partials/_layout.scss */
 .bloglist ul li p {
   text-align: center;
 }
-/* line 125, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 132, ../../_compass/partials/_layout.scss */
+  .bloglist ul li p {
+    text-align: justify;
+  }
+}
+/* line 140, ../../_compass/partials/_layout.scss */
 .bloglist ul li:hover {
   background-color: #f0f0f0;
 }
-/* line 129, ../../_compass/partials/_layout.scss */
+/* line 144, ../../_compass/partials/_layout.scss */
 .bloglist ul li a {
   display: block;
   height: 100%;
   padding: 2.5%;
 }
-/* line 134, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 144, ../../_compass/partials/_layout.scss */
+  .bloglist ul li a {
+    padding: 0;
+  }
+}
+/* line 153, ../../_compass/partials/_layout.scss */
 .bloglist ul li a .post-content {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 143, ../../_compass/partials/_layout.scss */
+/* line 162, ../../_compass/partials/_layout.scss */
 .bloglist ul li a:hover {
   color: rgba(30, 30, 30, 0.5);
   text-decoration: none;
 }
-/* line 148, ../../_compass/partials/_layout.scss */
+/* line 167, ../../_compass/partials/_layout.scss */
 .bloglist ul li a:visited {
   color: rgba(30, 30, 30, 0.5);
 }
 
-/* line 156, ../../_compass/partials/_layout.scss */
+/* line 175, ../../_compass/partials/_layout.scss */
 .post-meta {
   font-size: 0.875em;
   line-height: 2.4127em;
   color: #828282;
 }
 
-/* line 161, ../../_compass/partials/_layout.scss */
+/* line 180, ../../_compass/partials/_layout.scss */
 .post-link {
   display: block;
 }
@@ -563,93 +602,93 @@ figure {
 /**
 * Home
 */
-/* line 170, ../../_compass/partials/_layout.scss */
+/* line 189, ../../_compass/partials/_layout.scss */
 .center {
   text-align: center;
 }
 
-/* line 175, ../../_compass/partials/_layout.scss */
+/* line 194, ../../_compass/partials/_layout.scss */
 .instagram {
   clear: left;
 }
 
-/* line 179, ../../_compass/partials/_layout.scss */
+/* line 198, ../../_compass/partials/_layout.scss */
 .work ul, .instagram ul {
   width: 1200px;
   margin: 0 auto;
 }
 @media (min-width: 1035px) and (max-width: 1250px) {
-  /* line 179, ../../_compass/partials/_layout.scss */
+  /* line 198, ../../_compass/partials/_layout.scss */
   .work ul, .instagram ul {
     width: 1011px;
   }
 }
 @media (min-width: 977px) and (max-width: 1035px) {
-  /* line 179, ../../_compass/partials/_layout.scss */
+  /* line 198, ../../_compass/partials/_layout.scss */
   .work ul, .instagram ul {
     width: 930px;
   }
 }
 @media (min-width: 657px) and (max-width: 977px) {
-  /* line 179, ../../_compass/partials/_layout.scss */
+  /* line 198, ../../_compass/partials/_layout.scss */
   .work ul, .instagram ul {
     width: 600px;
   }
-  /* line 192, ../../_compass/partials/_layout.scss */
+  /* line 211, ../../_compass/partials/_layout.scss */
   .work ul li:last-child, .instagram ul li:last-child {
     display: none;
   }
 }
 @media (max-width: 657px) {
-  /* line 179, ../../_compass/partials/_layout.scss */
+  /* line 198, ../../_compass/partials/_layout.scss */
   .work ul, .instagram ul {
     width: 480px;
   }
-  /* line 200, ../../_compass/partials/_layout.scss */
+  /* line 219, ../../_compass/partials/_layout.scss */
   .work ul li:last-child, .instagram ul li:last-child {
     display: none;
   }
 }
-/* line 210, ../../_compass/partials/_layout.scss */
+/* line 229, ../../_compass/partials/_layout.scss */
 .work ul li, .instagram ul li {
   float: left;
   width: 400px;
   height: 400px;
 }
 @media (min-width: 1035px) and (max-width: 1250px) {
-  /* line 210, ../../_compass/partials/_layout.scss */
+  /* line 229, ../../_compass/partials/_layout.scss */
   .work ul li, .instagram ul li {
     width: 337px;
     height: 337px;
   }
 }
 @media (min-width: 977px) and (max-width: 1035px) {
-  /* line 210, ../../_compass/partials/_layout.scss */
+  /* line 229, ../../_compass/partials/_layout.scss */
   .work ul li, .instagram ul li {
     width: 310px;
     height: 310px;
   }
 }
 @media (min-width: 657px) and (max-width: 977px) {
-  /* line 210, ../../_compass/partials/_layout.scss */
+  /* line 229, ../../_compass/partials/_layout.scss */
   .work ul li, .instagram ul li {
     width: 300px;
     height: 300px;
   }
 }
 @media (max-width: 657px) {
-  /* line 210, ../../_compass/partials/_layout.scss */
+  /* line 229, ../../_compass/partials/_layout.scss */
   .work ul li, .instagram ul li {
     width: 240px;
     height: 240px;
   }
 }
-/* line 233, ../../_compass/partials/_layout.scss */
+/* line 252, ../../_compass/partials/_layout.scss */
 .work ul li img, .instagram ul li img {
   height: 100%;
   width: 100%;
 }
-/* line 240, ../../_compass/partials/_layout.scss */
+/* line 259, ../../_compass/partials/_layout.scss */
 .work ul figure, .instagram ul figure {
   position: relative;
   height: 100%;
@@ -657,7 +696,7 @@ figure {
   overflow: hidden;
   margin: 0;
 }
-/* line 247, ../../_compass/partials/_layout.scss */
+/* line 266, ../../_compass/partials/_layout.scss */
 .work ul figure img, .instagram ul figure img {
   width: 100%;
   height: 100%;
@@ -671,7 +710,7 @@ figure {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 258, ../../_compass/partials/_layout.scss */
+/* line 277, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption, .instagram ul figure figcaption {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -689,13 +728,13 @@ figure {
   -webkit-transform: translateY(25px);
   transform: translateY(25px);
 }
-/* line 270, ../../_compass/partials/_layout.scss */
+/* line 289, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .project-type ul, .instagram ul figure figcaption .project-type ul {
   width: 65.51724%;
   float: left;
   margin-right: 3.44828%;
 }
-/* line 274, ../../_compass/partials/_layout.scss */
+/* line 293, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .project-type li, .instagram ul figure figcaption .project-type li {
   width: 6.77966%;
   float: left;
@@ -705,20 +744,20 @@ figure {
   font-weight: 100;
   list-style-type: none;
 }
-/* line 281, ../../_compass/partials/_layout.scss */
+/* line 300, ../../_compass/partials/_layout.scss */
 .work ul figure figcaption .instacaption, .instagram ul figure figcaption .instacaption {
   font-size: 0.55556em;
   line-height: 1.52em;
   font-weight: 300;
 }
-/* line 289, ../../_compass/partials/_layout.scss */
+/* line 308, ../../_compass/partials/_layout.scss */
 .work ul a, .instagram ul a {
   display: block;
   position: relative;
   height: 100%;
   text-decoration: none;
 }
-/* line 297, ../../_compass/partials/_layout.scss */
+/* line 316, ../../_compass/partials/_layout.scss */
 .work ul a:hover > figure figcaption, .instagram ul a:hover > figure figcaption {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -726,7 +765,7 @@ figure {
   transform: translateY(0px);
   opacity: 1;
 }
-/* line 302, ../../_compass/partials/_layout.scss */
+/* line 321, ../../_compass/partials/_layout.scss */
 .work ul a:hover > figure img, .instagram ul a:hover > figure img {
   opacity: 0.08;
   -moz-transform: scale(1.1);
@@ -738,31 +777,38 @@ figure {
 /**
 * Sections
 */
-/* line 316, ../../_compass/partials/_layout.scss */
+/* line 335, ../../_compass/partials/_layout.scss */
 section {
   overflow: hidden;
   *zoom: 1;
   display: block;
 }
 
-/* line 322, ../../_compass/partials/_layout.scss */
+/* line 340, ../../_compass/partials/_layout.scss */
 .section-title {
   text-align: center;
   padding-left: 8.47458%;
   padding-right: 8.47458%;
 }
 
-/* line 326, ../../_compass/partials/_layout.scss */
+/* line 344, ../../_compass/partials/_layout.scss */
 .sub-head {
   text-align: center;
   padding-left: 8.47458%;
   padding-right: 8.47458%;
+  max-width: 1200px;
+}
+@media (max-width: 657px) {
+  /* line 344, ../../_compass/partials/_layout.scss */
+  .sub-head {
+    text-align: justify;
+  }
 }
 
 /**
 * Posts
 */
-/* line 334, ../../_compass/partials/_layout.scss */
+/* line 357, ../../_compass/partials/_layout.scss */
 .post-header {
   width: 83.05085%;
   float: left;
@@ -771,57 +817,73 @@ section {
   margin-bottom: 2.11111em;
   text-align: center;
 }
-/* line 340, ../../_compass/partials/_layout.scss */
+/* line 363, ../../_compass/partials/_layout.scss */
 .post-header figure {
   text-align: center;
 }
-/* line 343, ../../_compass/partials/_layout.scss */
+/* line 366, ../../_compass/partials/_layout.scss */
 .post-header figure img {
   margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
-  /* line 349, ../../_compass/partials/_layout.scss */
+  /* line 372, ../../_compass/partials/_layout.scss */
   .post-title {
     font-size: 36px;
   }
 }
 
-/* line 355, ../../_compass/partials/_layout.scss */
+/* line 378, ../../_compass/partials/_layout.scss */
 .post {
   margin-bottom: 8.44444em;
 }
-/* line 357, ../../_compass/partials/_layout.scss */
+/* line 380, ../../_compass/partials/_layout.scss */
 .post img, .post video {
   display: block;
   margin: 2.11111em auto;
 }
 
-/* line 366, ../../_compass/partials/_layout.scss */
+/* line 389, ../../_compass/partials/_layout.scss */
 .project .post {
   width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   margin-bottom: 8.44444em;
 }
-/* line 369, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 389, ../../_compass/partials/_layout.scss */
+  .project .post {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    padding-left: 8.47458%;
+    padding-right: 8.47458%;
+  }
+}
+/* line 397, ../../_compass/partials/_layout.scss */
 .project .post img, .project .post video {
   display: block;
   margin: 2.11111em auto;
 }
-/* line 375, ../../_compass/partials/_layout.scss */
+/* line 406, ../../_compass/partials/_layout.scss */
 .project .post-meta {
   margin-top: 5.86889em;
 }
+@media (max-width: 657px) {
+  /* line 406, ../../_compass/partials/_layout.scss */
+  .project .post-meta {
+    margin-top: 2.11111em;
+  }
+}
 
-/* line 381, ../../_compass/partials/_layout.scss */
+/* line 415, ../../_compass/partials/_layout.scss */
 .mosaic {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 383, ../../_compass/partials/_layout.scss */
+/* line 418, ../../_compass/partials/_layout.scss */
 .mosaic li {
   width: 23.72881%;
   float: left;
@@ -852,48 +914,74 @@ section {
   clear: none;
 }
 
+/* line 423, ../../_compass/partials/_layout.scss */
+.mosaic-two {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 426, ../../_compass/partials/_layout.scss */
+.mosaic-two li {
+  width: 49.15254%;
+  float: left;
+}
+/* line 66, ../../../../../../var/lib/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.mosaic-two li:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../../../../var/lib/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.mosaic-two li:nth-child(2n + 2) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+
 @media screen and (max-width: 800px) {
-  /* line 392, ../../_compass/partials/_layout.scss */
+  /* line 435, ../../_compass/partials/_layout.scss */
   .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 400, ../../_compass/partials/_layout.scss */
+/* line 442, ../../_compass/partials/_layout.scss */
 .post-content h3 {
   font-size: 26px;
 }
 @media screen and (max-width: 800px) {
-  /* line 400, ../../_compass/partials/_layout.scss */
+  /* line 442, ../../_compass/partials/_layout.scss */
   .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 408, ../../_compass/partials/_layout.scss */
+/* line 450, ../../_compass/partials/_layout.scss */
 .post-content h4 {
   font-size: 20px;
 }
 @media screen and (max-width: 800px) {
-  /* line 408, ../../_compass/partials/_layout.scss */
+  /* line 450, ../../_compass/partials/_layout.scss */
   .post-content h4 {
     font-size: 18px;
   }
 }
 
-/* line 419, ../../_compass/partials/_layout.scss */
+/* line 461, ../../_compass/partials/_layout.scss */
 .project .giffy {
   width: 79.59184%;
   float: left;
   margin-right: 2.04082%;
   margin-left: 8.47458%;
 }
-/* line 423, ../../_compass/partials/_layout.scss */
+/* line 465, ../../_compass/partials/_layout.scss */
 .project .giffy img {
   margin: 0;
   width: 31.03448%;
   float: left;
   margin-right: 3.44828%;
 }
-/* line 428, ../../_compass/partials/_layout.scss */
+/* line 470, ../../_compass/partials/_layout.scss */
 .project .giffy figcaption {
   font-size: 1.55556em;
   line-height: 1.35714em;
@@ -904,12 +992,12 @@ section {
   margin-right: 0;
 }
 
-/* line 439, ../../_compass/partials/_layout.scss */
+/* line 481, ../../_compass/partials/_layout.scss */
 .blogpost .post-meta {
   margin-top: 0.10556em;
 }
 
-/* line 444, ../../_compass/partials/_layout.scss */
+/* line 486, ../../_compass/partials/_layout.scss */
 aside.post-meta {
   width: 15.25424%;
   float: left;
@@ -918,39 +1006,49 @@ aside.post-meta {
   background-color: #fff;
   font-family: "Raleway", sans-serif;
 }
-/* line 451, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 486, ../../_compass/partials/_layout.scss */
+  aside.post-meta {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+/* line 498, ../../_compass/partials/_layout.scss */
 aside.post-meta span {
   font-weight: 700;
   color: #282828;
 }
-/* line 455, ../../_compass/partials/_layout.scss */
+/* line 502, ../../_compass/partials/_layout.scss */
 aside.post-meta ul {
   margin-left: 0;
 }
-/* line 458, ../../_compass/partials/_layout.scss */
+/* line 505, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li {
   list-style-type: none;
   margin-bottom: 0.42222em;
 }
-/* line 462, ../../_compass/partials/_layout.scss */
+/* line 509, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li ul li {
   line-height: 2.11111em;
   list-style-type: none;
   text-indent: -5px;
   margin: 0;
 }
-/* line 467, ../../_compass/partials/_layout.scss */
+/* line 514, ../../_compass/partials/_layout.scss */
 aside.post-meta ul li ul li:before {
   content: "-";
   position: relative;
   left: -5px;
 }
-/* line 471, ../../_compass/partials/_layout.scss */
+/* line 518, ../../_compass/partials/_layout.scss */
 aside.post-meta ul ul {
   margin-left: 20px;
 }
 
-/* line 479, ../../_compass/partials/_layout.scss */
+/* line 526, ../../_compass/partials/_layout.scss */
 .blogpost .post {
   width: 66.10169%;
   float: left;
@@ -960,32 +1058,42 @@ aside.post-meta ul ul {
 /*
 * Misc
 */
-/* line 488, ../../_compass/partials/_layout.scss */
+/* line 535, ../../_compass/partials/_layout.scss */
 .intro {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
   text-align: center;
 }
-/* line 493, ../../_compass/partials/_layout.scss */
+/* line 539, ../../_compass/partials/_layout.scss */
 .intro h1 {
-  font-size: 8.88889em;
-  line-height: 1.1875em;
+  font-size: 7.77778em;
+  line-height: 1.08571em;
   color: #e6e6e6;
 }
-/* line 499, ../../_compass/partials/_layout.scss */
+/* line 545, ../../_compass/partials/_layout.scss */
 .intro p {
   text-align: center;
   color: #c8c8c8;
 }
 
-/* line 507, ../../_compass/partials/_layout.scss */
+/* line 553, ../../_compass/partials/_layout.scss */
 .books .booklist ul {
   width: 83.05085%;
   float: left;
   margin-right: 1.69492%;
   margin-left: 8.47458%;
 }
-/* line 511, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 553, ../../_compass/partials/_layout.scss */
+  .books .booklist ul {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 0%;
+  }
+}
+/* line 562, ../../_compass/partials/_layout.scss */
 .books .booklist ul li {
   width: 32.20339%;
   float: left;
@@ -1010,7 +1118,23 @@ aside.post-meta ul ul {
   margin-right: -100%;
   clear: none;
 }
-/* line 516, ../../_compass/partials/_layout.scss */
+@media (max-width: 657px) {
+  /* line 562, ../../_compass/partials/_layout.scss */
+  .books .booklist ul li {
+    padding-left: 8.47458%;
+    padding-right: 8.47458%;
+    width: 100%;
+    float: left;
+    float: none;
+  }
+  /* line 66, ../../../../../../var/lib/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+  .books .booklist ul li:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 573, ../../_compass/partials/_layout.scss */
 .books .booklist ul li .book-title {
   display: block;
   font-family: Raleway, sans-serif;
@@ -1018,7 +1142,7 @@ aside.post-meta ul ul {
   font-size: 1.22222em;
   line-height: 1.72727em;
 }
-/* line 522, ../../_compass/partials/_layout.scss */
+/* line 579, ../../_compass/partials/_layout.scss */
 .books .booklist ul li .book-author {
   font-size: 0.88889em;
   line-height: 2.375em;
@@ -1067,7 +1191,7 @@ aside.post-meta ul ul {
     opacity: 1;
   }
 }
-/* line 544, ../../_compass/partials/_layout.scss */
+/* line 601, ../../_compass/partials/_layout.scss */
 .animate {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1085,14 +1209,14 @@ aside.post-meta ul ul {
   animation-iteration-count: 1;
 }
 
-/* line 556, ../../_compass/partials/_layout.scss */
+/* line 613, ../../_compass/partials/_layout.scss */
 .animate-one {
   -moz-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
 }
 
-/* line 559, ../../_compass/partials/_layout.scss */
+/* line 616, ../../_compass/partials/_layout.scss */
 .animate-two {
   -moz-animation-delay: 0.8s;
   -webkit-animation-delay: 0.8s;
@@ -1105,7 +1229,7 @@ aside.post-meta ul ul {
 /*
 * About
 */
-/* line 577, ../../_compass/partials/_layout.scss */
+/* line 634, ../../_compass/partials/_layout.scss */
 .about .portrait {
   width: 300px;
   margin: 2.11111em auto;
@@ -1113,10 +1237,19 @@ aside.post-meta ul ul {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 582, ../../_compass/partials/_layout.scss */
+/* line 639, ../../_compass/partials/_layout.scss */
 .about .post {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 657px) {
+  /* line 639, ../../_compass/partials/_layout.scss */
+  .about .post {
+    margin-bottom: 2.11111em;
+  }
 }
 
 /**
