@@ -22,7 +22,7 @@ skills-tools:
 - Stepper Motors
 ---
 
-<video width="100%" preload="auto" autoplay controls> 
+<video width="100%" preload="auto" controls> 
 	<source src="/assets/videos/Painyatta.mp4" type="video/mp4" />
 	Your browser does not support the video tag.
 </video>

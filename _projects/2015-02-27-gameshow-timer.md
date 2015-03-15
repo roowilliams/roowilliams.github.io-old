@@ -29,8 +29,10 @@ skills-tools:
 
 <img src="/assets/images/projects/Gameshow-Timer/Gameshow-Timer-Creative_Showtime.jpg" />
 
+##Context
 Every other Friday the Creative department of TMW get together to shout about any fun projects they've been working on. This takes the shape of a gameshow, with each of the 'contestants' given 30 seconds to pitch their project. Judges award the best projects with cupcakes and alcohol.
 
+##Brief
 After a few shonky shows run with soundboards and stopwatches I was briefed to build a timer that would run the show automatically. The timer was to count down 30 seconds, buzz and then give a 5 second pause to change contestants before counting down again. There could be a variable number of contestants each week so the timer would need a way for the user to select how many 'rounds' there needed to be.
 
 <video width="100%" preload="auto" autoplay controls> 
