@@ -19,6 +19,8 @@ sass:
 collections:
   projects:
     output: true
+  experiments:
+    output: true
 
 # Serving
 port: 4000

@@ -4,11 +4,17 @@ layout: project
 bodyclass: project
 title:  "Hackdays"
 tagline: Organising multiple Hackdays to explore better ways of working and have fun.
-date:   2012-2014
+date:   2015
 order: 7
 tile_image: /assets/images/projects/Hackdays/tile.jpg
 image: /assets/images/projects/Hackdays/Hackday-Banana.jpg
 
+project-type:
+- Events
+
+skills-tools: 
+- Research
+- Strategy
 ---
 
 ##Hackdays

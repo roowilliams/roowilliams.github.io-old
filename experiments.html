@@ -7,11 +7,20 @@ weight: 3
 ---
 
 <p class="tagline">Little bits of this and that.</p>
+<section class="experiments">
+{% assign experiments = (site.experiments | sort: 'order') %}
+	<ul>
 
-	<ul class="work-list">
-		{% for experiment in site.experiments %}
+		{% for experiment in experiments %}
 
-		<li><a href="{{ project.url | prepend: site.baseurl }}"><figure><img src="{{ experiment.tile_image }}"><figcaption class="center-middle"><span>{{ experiment.title }}</span></figcaption></figure></a></li>
+
+
+		<li><a href="#"><figure><img src="{{ experiment.tile_image }}" /><figcaption class="center-middle"><span class="instacaption">{{ experiment.caption }}</span>
+
+
+
+		</figcaption></figure></a></li>
 
 		{% endfor %}		
 	</ul>
+</section>

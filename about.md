@@ -29,7 +29,7 @@ I am currently Lab Tech Lead at <a href="http://www.tmwunlimited.com" target="_b
 			<li>Design thinking: creative and analytical methods</li>
 			<li>Human centered design</li>
 			<li>User research methods</li>
-			<li>Good listening andability to empathize</li>
+			<li>Good listening and ability to empathize</li>
 			<li>Leading research sessions</li>
 			<li>Ethnographic and observational research methods</li>
 			<li>Sketching and prototyping</li>
