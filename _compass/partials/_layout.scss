@@ -186,6 +186,15 @@ figure {
 * Home
 */
 
+.about-index {
+	width: 800px;
+	margin: 0 auto;
+
+	img {
+		margin-bottom: rhythm(1);
+	}
+}
+
 .center {
 	text-align: center;
 
@@ -195,7 +204,7 @@ figure {
 	clear: left;
 }
 
-.work ul, .instagram ul {
+.work ul, .instagram ul, .booklist ul {
 
 	width: 1200px;
 
@@ -413,18 +422,23 @@ section {
 }
 
 .mosaic {
-	@include span(6 of 6);
 
+	@include span(8 of 8);
 	li {
-		@include gallery(3);
+		@include gallery(2 of 8);
 	}
-	
+	&:nth-child(4) {
+		@include omega;
+	}
 }
 .mosaic-two {
-	@include span(6 of 6);
+	@include span(2 of 2);
 	
 	li {
-		@include gallery(6);
+		@include gallery(1 of 2);
+	}
+	&:nth-child(2) {
+		@include omega;
 	}
 	
 }
@@ -551,30 +565,40 @@ aside.post-meta {
 .books {
 	.booklist {
 		ul {
-			@include span(10 of 12);
-			@include push(1);
+			// @include span(10 of 12);
+			// @include push(1);
 
-			@include breakpoint(max-width $delta) {
-				@include span(12 of 12);
-				@include push(0);
-			}
+			// @include breakpoint(max-width $delta) {
+			// 	@include span(12 of 12);
+			// 	@include push(0);
+			// }
 
 			li {
-				@include gallery(4 of 12);
+				// @include gallery(4 of 12);
+				box-sizing: border-box;
+				height: 160px;
 
-				@include breakpoint(max-width $delta) {
-					@include pad(1);
-					@include gallery(12 of 12);
-					float: none;
+
+				a  {
+					padding: 20px;
+					background-color: rgb(230,230,230);
+					background-size: 10880px;
+					background-position: -1450px -2850px; 
+					background-repeat: no-repeat;
+					image-rendering: pixelated;
+					@include transition(background-position 0.3s ease-in);
+
+					&:hover {
+						background-position: -1450px -3100px; 
+					}
 				}
 
-				margin-bottom: rhythm(1);
 
 				.book-title {
 					display: block;
 					font-family: Raleway, sans-serif;
 					font-weight: 700;
-					@include adjust-font-size-to(22px);
+					@include adjust-font-size-to(26px);
 				}
 				.book-author {
 					@include adjust-font-size-to(16px);
@@ -645,4 +669,28 @@ aside.post-meta {
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
+
+.work {
+	margin-bottom: rhythm(2);
+}
+
+.intro-image {
+	display: block;
+	margin: 0 auto rhythm(2) auto;
+	border-radius: 50%;
+}
+
+.slides {
+	img {
+		box-shadow: 1px 1px 3px #999;
+	}
+
+	li {
+		margn-bottom: rhythm(0.5);
+	}
+}
+
+.fffix {
+	overflow: auto;
 }

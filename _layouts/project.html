@@ -18,8 +18,10 @@ layout: default
 
 <aside class="post-meta">
 	<ul>
-		<li>Date:
-			<span>{{ page.project-date }}</span></li>
+		<li>Date: <span>{{ page.project-date }}</span></li>
+		{% if page.timeframe %}
+		<li>Timeframe: <span>{{ page.timeframe }}</span></li>
+		{% endif %}
 
 			<li>Project Type
 				<ul>

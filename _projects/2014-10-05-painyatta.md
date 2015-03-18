@@ -3,7 +3,7 @@ hidden: false
 layout: project
 bodyclass: project
 title:  "Activision Painyatta"
-tagline: "A tweet-powered baseball bat to bring a digital presence to the launch event of Activision's Skylanders Trapteam"
+tagline: "A tweet-powered baseball bat to bring a digital presence to the launch event of Activision's Skylanders Trapteam."
 date:   2014-10-05
 categories: portfolio
 order: 3
@@ -12,6 +12,7 @@ tile_image: "/assets/images/projects/Painyatta/tile.jpg"
 
 
 project-date: 2014-10-05
+timeframe: 1 week
 
 project-type:
 - Installation
@@ -39,12 +40,14 @@ The plan was to build an app that would live capture all the tweets so I enliste
 
 I took the opportunity to learn more about stepper motors so volunteered to focus on the electrical and programming side of things whilst Tim and his team tackled the physical build.
 
+<div class="fffix">
 <ul class="mosaic">
 	<li><img src="/assets/images/projects/Painyatta/BADASS_LED_Ticker.gif" title="" alt=""/></li>
 	<li><img src="/assets/images/projects/Painyatta/Stepper_Test_2.gif" title="" alt=""/></li>
 	<li><img src="/assets/images/projects/Painyatta/Baseball_Bat_Test.gif" title="" alt=""/></li>
 	<li><img src="/assets/images/projects/Painyatta/Baseball_Bat_Spray.gif" title="" alt=""/></li>
 </ul>
+</div>
 <img src="/assets/images/projects/Painyatta/Stepper_Motor_Column_With_Bat.jpg" title="" alt=""/>
 
 <img src="/assets/images/projects/Painyatta/Activision-Skylanders_Launch-Painyatta-Digital-Event-Truss.jpg" title="" alt=""/>
@@ -57,5 +60,7 @@ I took the opportunity to learn more about stepper motors so volunteered to focu
 
 
 The event was a great success with thousands of tweets recieved during the 3 hour event and the live stream coverage watched by hundreds online.
+
+<img src="/assets/images/projects/Painyatta/Activision-Skylanders_Launch-Painyatta-Digital-Event-Tweets.jpg" title="" alt=""/>
 
 <img src="/assets/images/projects/Painyatta/Activision-Skylanders_Launch-Painyatta-Digital-Event-End.jpg" title="" alt=""/>
