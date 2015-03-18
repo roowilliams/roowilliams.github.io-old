@@ -1228,6 +1228,7 @@ aside.post-meta ul ul {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
 }
 @media (max-width: 657px) {
   /* line 663, ../../_compass/partials/_layout.scss */
@@ -1236,30 +1237,62 @@ aside.post-meta ul ul {
   }
 }
 
-/* line 674, ../../_compass/partials/_layout.scss */
+/* line 675, ../../_compass/partials/_layout.scss */
 .work {
   margin-bottom: 4.22222em;
 }
 
-/* line 678, ../../_compass/partials/_layout.scss */
+/* line 679, ../../_compass/partials/_layout.scss */
 .intro-image {
   display: block;
   margin: 0 auto 4.22222em auto;
   border-radius: 50%;
 }
 
-/* line 685, ../../_compass/partials/_layout.scss */
+/* line 686, ../../_compass/partials/_layout.scss */
 .slides img {
   box-shadow: 1px 1px 3px #999;
 }
-/* line 689, ../../_compass/partials/_layout.scss */
+/* line 690, ../../_compass/partials/_layout.scss */
 .slides li {
   margn-bottom: 1.05556em;
 }
 
-/* line 694, ../../_compass/partials/_layout.scss */
+/* line 695, ../../_compass/partials/_layout.scss */
 .fffix {
   overflow: auto;
+}
+
+/* line 699, ../../_compass/partials/_layout.scss */
+.skills {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0.77778em;
+  line-height: 2.71429em;
+}
+/* line 703, ../../_compass/partials/_layout.scss */
+.skills h2 {
+  text-align: center;
+}
+/* line 706, ../../_compass/partials/_layout.scss */
+.skills .section {
+  width: 44.44444%;
+  float: left;
+  margin-right: 11.11111%;
+}
+/* line 709, ../../_compass/partials/_layout.scss */
+.skills .last {
+  width: 44.44444%;
+  float: right;
+  margin-right: 0;
+}
+/* line 717, ../../_compass/partials/_layout.scss */
+.skills li:before {
+  content: "-";
+  position: relative;
+  left: -7px;
 }
 
 /**
