@@ -153,7 +153,15 @@
 
 <h2 id="version-2">Version 2</h2>
 
-<p>We were commissioned by Diageo’s Media Futures department to create a Sentimeter for them.</p>
+<p>Inspired by Sentimeter v1 Diageo’s Media Futures department commissioned us to create a Sentimeter for them. It needed to be robust enough to deploy at a client’s office without requiring maintenance.</p>
+
+<p>I decided to built it on the Arduino Yun platform, which is a WiFi-enabled Arduino that runs a tiny distribution of Linux. The Arduino would take care of the tap interactions and the Linux part would host a SQLite database that would handle the questions and answers. </p>
+
+<p>The unit broadcasts its own WiFi network. To see the results all you’d need to do is connect to the WiFi network and visit a page hosted on the Yun’s built in webserver.</p>
+
+<p>I decided to use capacitive touch points for the options in this version due to learnings from the previous. In v1 the mechanical touch pads and buttons would eventually fail - using capacitive touch would mean that there would be no mechnical issues.</p>
+
+<p><img src="/assets/images/projects/Sentimeter/diageo-logo.png" /></p>
 
 <div class="fffix">
 	<ul class="mosaic-two">
@@ -166,7 +174,9 @@
 	</ul>
 </div>
 
-<p><img src="/assets/images/projects/Sentimeter/diageo-logo.png" /></p>
+<p><img src="/assets/images/projects/Sentimeter/Sentimeter_v2.jpg" />
+<img src="/assets/images/projects/Sentimeter/Sentimeter_v2-Process.gif" /></p>
+
 
 			</div>
 

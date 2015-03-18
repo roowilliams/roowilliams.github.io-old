@@ -1,5 +1,5 @@
 ---
-hidden: false
+hidden: true
 layout: project
 bodyclass: project
 title:  "M&C Saatchi Virgin Holidays"
