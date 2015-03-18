@@ -83,5 +83,6 @@ I decided to use capacitive touch points for the options in this version due to 
 </div>
 
 <img src="/assets/images/projects/Sentimeter/Sentimeter_v2.jpg" />
+<img src="/assets/images/projects/Sentimeter/Sentimeter_v2-Build.jpg" />
 <img src="/assets/images/projects/Sentimeter/Sentimeter_v2-Process.gif" />
 
