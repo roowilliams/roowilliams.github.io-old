@@ -2,7 +2,7 @@
 hidden: false
 layout: project
 bodyclass: project
-title:  "Sentimeter v1 & v2"
+title:  "Diageo Sentimeter v1 & v2"
 tagline: "A novel data collection tool to measure the mood of the workplace."
 date:   2014-08-20
 order: 4
@@ -73,3 +73,5 @@ We were commissioned by Diageo's Media Futures department to create a Sentimeter
 		</li>
 	</ul>
 </div>
+
+<img src="/assets/images/projects/Sentimeter/diageo-logo.png">
