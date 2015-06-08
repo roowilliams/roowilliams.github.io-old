@@ -353,7 +353,6 @@ section {
 .sub-head {
 	text-align: center;
 	@include pad(1);
-	max-width: 1200px;
 
 	@include breakpoint(max-width $delta) {
 		text-align: justify;
