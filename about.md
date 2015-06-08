@@ -19,7 +19,8 @@ I'm an excitable character, chatty, competitive, pretty brazen and I like it tha
 
 I am currently Lab Tech Lead at <a href="http://www.tmwunlimited.com" target="_blank">TMW Unlimited</a>, where I spend my days prototyping, thinking and building things using emerging tech.
 
-<a href="http://www.google.com/recaptcha/mailhide/d?k=017zqiDGP6-vox_pF6XA1gfw==&amp;c=kWkFPkZiFDjJse66ZAohkr3_JakXKN79hRBi2JUwCqs=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\075017zqiDGP6-vox_pF6XA1gfw\75\75\46c\75kWkFPkZiFDjJse66ZAohkr3_JakXKN79hRBi2JUwCqs\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">r...</a>@roowilliams.com
+Email: <a href="http://www.google.com/recaptcha/mailhide/d?k=017zqiDGP6-vox_pF6XA1gfw==&amp;c=kWkFPkZiFDjJse66ZAohkr3_JakXKN79hRBi2JUwCqs=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\075017zqiDGP6-vox_pF6XA1gfw\75\75\46c\75kWkFPkZiFDjJse66ZAohkr3_JakXKN79hRBi2JUwCqs\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">r...</a>@roowilliams.com
+Twitter: <a href="http://twitter.com/roowilliams" target="_blank">@roowilliams</a>
 
 <h1 class="section-title">Skills</h1>
 
