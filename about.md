@@ -59,9 +59,8 @@ Twitter: <a href="http://twitter.com/roowilliams" target="_blank">@roowilliams</
 			<li>Visualisation</li>
 			<li>3D modeling and rendering (Rhinoceros 3D)</li>
 			<li>Desktop manufacturing technologies: 3D printing, laser cutting, vinyl cutters & engravers</li>
-			<li>Leading product delivery (production side)</li>
 			<li>Object oriented programming principles</li>
-			<li>JavaScript: Node.js, Angular.js, jQuery</li>
+			<li>JavaScript: Node.js, jQuery</li>
 			<li>Arduino</li>
 			<li>Processing</li>
 			<li>Python</li>
